@@ -32,16 +32,14 @@ function deferVideoSource(video, apply) {
 const module1 = (() => {
 const teaserSamples = [
   {
-    "key": "worldlabs-057",
+    "key": "sample-scene-057",
     "tab": "Village square",
-    "domain": "WorldLabs",
+    "domain": "Additional scenes",
     "sample": "057",
     "title": "Village square",
-    "checkpoint": "WorldLabs \u00b7 step 13000",
-    "rgb": "assets/teaser-sync/worldlabs-057_rgb.mp4",
-    "progressive": "assets/teaser-sync/worldlabs-057_progressive.mp4",
+    "rgb": "assets/teaser-sync/sample-scene-057_rgb.mp4",
+    "progressive": "assets/teaser-sync/sample-scene-057_progressive.mp4",
     "caption": "A storybook village square framed by timber houses and a stone well.",
-    "source": "step0013000/worldlabs_packed/scannetpp/057_pred.mp4",
     "metrics": [
       "81 frames \u00b7 12 fps",
       "672 \u00d7 378",
@@ -49,20 +47,18 @@ const teaserSamples = [
     ],
     "displayNumber": 1,
     "label": "Village square",
-    "rgbPoster": "assets/additional-scenes/curated/videos/worldlabs-057_rgb_poster.jpg",
-    "progressivePoster": "assets/additional-scenes/curated/videos/worldlabs-057_progressive_poster.jpg"
+    "rgbPoster": "assets/additional-scenes/curated/videos/sample-scene-057_rgb_poster.jpg",
+    "progressivePoster": "assets/additional-scenes/curated/videos/sample-scene-057_progressive_poster.jpg"
   },
   {
-    "key": "worldlabs-064",
+    "key": "sample-scene-064",
     "tab": "Ancient forest",
-    "domain": "WorldLabs",
+    "domain": "Additional scenes",
     "sample": "064",
     "title": "Ancient forest",
-    "checkpoint": "WorldLabs \u00b7 step 13000",
-    "rgb": "assets/teaser-sync/worldlabs-064_rgb.mp4",
-    "progressive": "assets/teaser-sync/worldlabs-064_progressive.mp4",
+    "rgb": "assets/teaser-sync/sample-scene-064_rgb.mp4",
+    "progressive": "assets/teaser-sync/sample-scene-064_progressive.mp4",
     "caption": "A camera path through an ancient forest of roots, moss, and running water.",
-    "source": "step0013000/worldlabs_packed/scannetpp/064_pred.mp4",
     "metrics": [
       "81 frames \u00b7 12 fps",
       "672 \u00d7 378",
@@ -70,8 +66,8 @@ const teaserSamples = [
     ],
     "displayNumber": 2,
     "label": "Ancient forest",
-    "rgbPoster": "assets/additional-scenes/curated/videos/worldlabs-064_rgb_poster.jpg",
-    "progressivePoster": "assets/additional-scenes/curated/videos/worldlabs-064_progressive_poster.jpg"
+    "rgbPoster": "assets/additional-scenes/curated/videos/sample-scene-064_rgb_poster.jpg",
+    "progressivePoster": "assets/additional-scenes/curated/videos/sample-scene-064_progressive_poster.jpg"
   },
   {
     "key": "world-054",
@@ -149,7 +145,6 @@ const teaserSamples = [
     "rgb": "assets/teaser-sync/custom-path-a_rgb.mp4",
     "progressive": "assets/teaser-sync/custom-path-a_progressive.mp4",
     "caption": "A forward traversal through a wooden gate into a mountain village.",
-    "source": "large-motion-v1-page-eval/0002000/20260904_224943/eval/shard_2/case_000",
     "metrics": [
       "81 frames \u00b7 8 fps",
       "672 \u00d7 378",
@@ -170,7 +165,6 @@ const teaserSamples = [
     "rgb": "assets/teaser-sync/pexels-36584880_rgb.mp4",
     "progressive": "assets/teaser-sync/pexels-36584880_progressive.mp4",
     "caption": "An aerial orbit over a dense historic town at dusk.",
-    "source": "large-motion-v2-pexels-eval/0001000/20260907_101355/eval/shard_4/case_000",
     "metrics": [
       "81 frames \u00b7 8 fps",
       "672 \u00d7 378",
@@ -191,7 +185,6 @@ const teaserSamples = [
     "rgb": "assets/teaser-sync/pexels-38724392-c0_rgb.mp4",
     "progressive": "assets/teaser-sync/pexels-38724392-c0_progressive.mp4",
     "caption": "A low camera path along a pine forest trail beside a lake.",
-    "source": "large-motion-v2-pexels-eval/0001000/20260907_101355/eval/shard_6/case_001",
     "metrics": [
       "81 frames \u00b7 8 fps",
       "672 \u00d7 378",
@@ -203,16 +196,14 @@ const teaserSamples = [
     "progressivePoster": "assets/additional-scenes/curated/videos/pexels-38724392-c0_progressive_poster.jpg"
   },
   {
-    "key": "worldlabs-001",
+    "key": "sample-scene-001",
     "tab": "Knitted harbor",
-    "domain": "WorldLabs",
+    "domain": "Additional scenes",
     "sample": "001",
     "title": "Knitted harbor",
-    "checkpoint": "WorldLabs \u00b7 step 13000",
-    "rgb": "assets/teaser-sync/worldlabs-001_rgb.mp4",
-    "progressive": "assets/teaser-sync/worldlabs-001_progressive.mp4",
+    "rgb": "assets/teaser-sync/sample-scene-001_rgb.mp4",
+    "progressive": "assets/teaser-sync/sample-scene-001_progressive.mp4",
     "caption": "A handcrafted harbor scene centered on a knitted octopus and miniature boats.",
-    "source": "step0013000/worldlabs_packed/scannetpp/001_pred.mp4",
     "metrics": [
       "81 frames \u00b7 12 fps",
       "672 \u00d7 378",
@@ -220,8 +211,8 @@ const teaserSamples = [
     ],
     "displayNumber": 12,
     "label": "Knitted harbor",
-    "rgbPoster": "assets/additional-scenes/curated/videos/worldlabs-001_rgb_poster.jpg",
-    "progressivePoster": "assets/additional-scenes/curated/videos/worldlabs-001_progressive_poster.jpg"
+    "rgbPoster": "assets/additional-scenes/curated/videos/sample-scene-001_rgb_poster.jpg",
+    "progressivePoster": "assets/additional-scenes/curated/videos/sample-scene-001_progressive_poster.jpg"
   },
   {
     "key": "lm-kitti-0005-split7",
@@ -233,7 +224,6 @@ const teaserSamples = [
     "rgb": "assets/teaser-sync/lm-kitti-0005-split7_rgb.mp4",
     "progressive": "assets/teaser-sync/lm-kitti-0005-split7_progressive.mp4",
     "caption": "A close residential driveway sequence with strong foreground parallax.",
-    "source": "large-motion-v1-page-eval/0002000/20260904_224943/eval/shard_5/case_002",
     "metrics": [
       "81 frames \u00b7 8 fps",
       "672 \u00d7 378",
@@ -289,15 +279,15 @@ const teaserSamples = [
     "progressivePoster": "assets/teaser/outdoor-035_progressive_poster.jpg"
   },
   {
-    "key": "worldlabs-005",
+    "key": "sample-scene-005",
     "label": "Toy room",
-    "rgb": "assets/teaser-sync/worldlabs-005_rgb.mp4",
-    "progressive": "assets/teaser-sync/worldlabs-005_progressive.mp4",
+    "rgb": "assets/teaser-sync/sample-scene-005_rgb.mp4",
+    "progressive": "assets/teaser-sync/sample-scene-005_progressive.mp4",
     "displayNumber": 18,
     "tab": "Toy room",
     "title": "Toy room",
-    "rgbPoster": "assets/additional-scenes/curated/videos/worldlabs-005_rgb_poster.jpg",
-    "progressivePoster": "assets/additional-scenes/curated/videos/worldlabs-005_progressive_poster.jpg"
+    "rgbPoster": "assets/additional-scenes/curated/videos/sample-scene-005_rgb_poster.jpg",
+    "progressivePoster": "assets/additional-scenes/curated/videos/sample-scene-005_progressive_poster.jpg"
   }
 ];
 
@@ -903,7 +893,7 @@ const cloudSamples = scenes.map(([id, tab, title, metrics, caption]) => ({
 return { cloudArms,cloudSamples };
 })();
 const module7 = (() => {
-const colleagueSamples = [
+const additionalSamples = [
   {
     "key": "lm-kitti-0002-split20",
     "tab": "Sunlit drive",
@@ -914,7 +904,6 @@ const colleagueSamples = [
     "rgb": "assets/additional-scenes/curated/videos/lm-kitti-0002-split20_rgb.mp4",
     "progressive": "assets/additional-scenes/curated/videos/lm-kitti-0002-split20_progressive.mp4",
     "caption": "A sunlit drive along a leafy residential street.",
-    "source": "large-motion-v1-page-eval/0002000/20260904_224943/eval/shard_2/case_002",
     "metrics": [
       "81 frames · 8 fps",
       "672 × 378",
@@ -933,7 +922,6 @@ const colleagueSamples = [
     "rgb": "assets/additional-scenes/curated/videos/lm-kitti-0000-split10_rgb.mp4",
     "progressive": "assets/additional-scenes/curated/videos/lm-kitti-0000-split10_progressive.mp4",
     "caption": "An urban residential drive with parked and moving vehicles.",
-    "source": "large-motion-v1-page-eval/0002000/20260904_224943/eval/shard_0/case_002",
     "metrics": [
       "81 frames · 8 fps",
       "672 × 378",
@@ -952,7 +940,6 @@ const colleagueSamples = [
     "rgb": "assets/additional-scenes/curated/videos/custom-path-b_rgb.mp4",
     "progressive": "assets/additional-scenes/curated/videos/custom-path-b_progressive.mp4",
     "caption": "A designed forward approach toward a classical temple.",
-    "source": "large-motion-v1-page-eval/0002000/designed-trajectory/eval/shard_0/case_000",
     "metrics": [
       "81 frames · 8 fps",
       "672 × 378",
@@ -971,7 +958,6 @@ const colleagueSamples = [
     "rgb": "assets/additional-scenes/curated/videos/pexels-35548242_rgb.mp4",
     "progressive": "assets/additional-scenes/curated/videos/pexels-35548242_progressive.mp4",
     "caption": "A smooth flight above a snow-covered forest creek.",
-    "source": "large-motion-v2-pexels-eval/0001000/20260907_101355/eval/shard_3/case_000",
     "metrics": [
       "81 frames · 8 fps",
       "672 × 378",
@@ -990,7 +976,6 @@ const colleagueSamples = [
     "rgb": "assets/additional-scenes/curated/videos/pexels-38250760-c1_rgb.mp4",
     "progressive": "assets/additional-scenes/curated/videos/pexels-38250760-c1_progressive.mp4",
     "caption": "An aerial view across an autumn mountain village.",
-    "source": "large-motion-v2-pexels-eval/0001000/20260907_101355/eval/shard_3/case_001",
     "metrics": [
       "81 frames · 8 fps",
       "672 × 378",
@@ -1009,7 +994,6 @@ const colleagueSamples = [
     "rgb": "assets/additional-scenes/curated/videos/pexels-38250760-c3_rgb.mp4",
     "progressive": "assets/additional-scenes/curated/videos/pexels-38250760-c3_progressive.mp4",
     "caption": "A sweeping view into an autumn mountain canyon.",
-    "source": "large-motion-v2-pexels-eval/0001000/20260907_101355/eval/shard_5/case_001",
     "metrics": [
       "81 frames · 8 fps",
       "672 × 378",
@@ -1028,7 +1012,6 @@ const colleagueSamples = [
     "rgb": "assets/additional-scenes/curated/videos/pexels-39112915_rgb.mp4",
     "progressive": "assets/additional-scenes/curated/videos/pexels-39112915_progressive.mp4",
     "caption": "A rooftop panorama across a modern city district.",
-    "source": "large-motion-v2-pexels-eval/0001000/20260907_101355/eval/shard_7/case_000",
     "metrics": [
       "81 frames · 8 fps",
       "672 × 378",
@@ -1047,7 +1030,6 @@ const colleagueSamples = [
     "rgb": "assets/additional-scenes/curated/videos/omniworld-099_rgb.mp4",
     "progressive": "assets/additional-scenes/curated/videos/omniworld-099_progressive.mp4",
     "caption": "A rider crossing a sunlit hillside with dense vegetation.",
-    "source": "step0013000/iv3/omniworld_game_packed/scannetpp/099_pred.mp4",
     "metrics": [
       "81 frames · 12 fps",
       "672 × 378",
@@ -1057,16 +1039,14 @@ const colleagueSamples = [
     "label": "Hillside rider"
   },
   {
-    "key": "worldlabs-034",
+    "key": "sample-scene-034",
     "tab": "Indoor pool",
-    "domain": "WorldLabs",
+    "domain": "Additional scenes",
     "sample": "034",
     "title": "Indoor pool",
-    "checkpoint": "WorldLabs · step 13000",
-    "rgb": "assets/additional-scenes/curated/videos/worldlabs-034_rgb.mp4",
-    "progressive": "assets/additional-scenes/curated/videos/worldlabs-034_progressive.mp4",
+    "rgb": "assets/additional-scenes/curated/videos/sample-scene-034_rgb.mp4",
+    "progressive": "assets/additional-scenes/curated/videos/sample-scene-034_progressive.mp4",
     "caption": "A quiet indoor pool with reflective water and layered room geometry.",
-    "source": "step0013000/worldlabs_packed/scannetpp/034_pred.mp4",
     "metrics": [
       "81 frames · 12 fps",
       "672 × 378",
@@ -1077,7 +1057,7 @@ const colleagueSamples = [
   }
 ];
 
-return { colleagueSamples };
+return { additionalSamples };
 })();
 const module8 = (() => {
 const independent3DMethods = [
@@ -1127,11 +1107,11 @@ const {  teaserSamples  } = module1;
 const {  i2vSamples, t2iSamples, reconSamples, outdoorSamples  } = module2;
 const {  compareSamples, compareArms  } = module5;
 const {  cloudSamples, cloudArms  } = module6;
-const {  colleagueSamples  } = module7;
+const {  additionalSamples  } = module7;
 const {  independent3DSamples, independent3DMethods  } = module8;
 
 // Merge only exactly matched source cases; preserve existing authored metadata.
-for (const sample of [...teaserSamples, ...i2vSamples, ...colleagueSamples, ...outdoorSamples]) {
+for (const sample of [...teaserSamples, ...i2vSamples, ...additionalSamples, ...outdoorSamples]) {
   sample.metrics = sample.metrics?.map(metric => /frames.*fps/.test(metric) ? "81 views · 6 s synchronized" : metric);
   const extra = window.NGD_SEQUENCE_EXTRAS?.[sample.key];
   if (extra) {
@@ -1655,7 +1635,7 @@ function createSequenceGallery(prefix, samples) {
   return { init, initPoseOverlay, initVideoFallback };
 }
 
-const outdoorGallery = createSequenceGallery("outdoor", [...colleagueSamples, ...outdoorSamples]);
+const outdoorGallery = createSequenceGallery("outdoor", [...additionalSamples, ...outdoorSamples]);
 
 function initT2I() {
   const tabs = document.querySelector("#t2i-tabs");
