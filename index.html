@@ -18,6 +18,7 @@
     <meta property="og:image" content="assets/t2i/images/geisha_rgb.png" />
     <title>GAE · Anonymous Supplementary Material</title>
     <link rel="stylesheet" href="styles.css?v=20260922film" />
+    <link rel="stylesheet" href="assets/supplement/viewer.css?v=20261116" />
   </head>
   <body data-theme="dark">
     <div class="grain" aria-hidden="true"></div>
@@ -39,14 +40,16 @@
       </button>
       <div class="chapter-links" id="chapter-links">
       <a href="#teaser"><span>↗</span><b>Highlights</b></a>
+      <a href="#dynamic-generation"><span>↗</span><b>Dynamic scenes</b></a>
       <a href="#latent"><span>01</span><b>Geometry latent</b></a>
       <a href="#method"><span>02</span><b>Pipeline</b></a>
       <a href="#i2v"><span>03</span><b>Indoor scenes</b></a>
       <a href="#outdoor"><span>04</span><b>Outdoor scenes</b></a>
       <a href="#pointcloud"><span>05</span><b>3D consistency</b></a>
       <a href="#compare"><span>06</span><b>Latent comparison</b></a>
-      <a href="#t2i"><span>07</span><b>Image + 3D</b></a>
-      <a href="#paper"><span>08</span><b>Abstract</b></a>
+      <a href="#dynamic-comparisons"><span>07</span><b>Dynamic comparison</b></a>
+      <a href="#t2i"><span>08</span><b>Image + 3D</b></a>
+      <a href="#paper"><span>09</span><b>Abstract</b></a>
       </div>
     </nav>
 
@@ -133,6 +136,15 @@
           </div><div class="teaser-footer"><span id="teaser-title"></span><span>18 scenes · one shared geometry-native latent</span></div></div>
         <div class="teaser-scenes" id="teaser-scenes" aria-label="Featured scenes"></div>
       </section>
+
+<section id="dynamic-generation" class="review-supplement">
+      <div class="section-shell"><div class="section">
+      <div class="section-heading"><div><p class="eyebrow">Dynamic scenes · Final model</p><h2>Generation with moving objects</h2></div><span class="count" id="dynamic-count"></span></div>
+      <p class="section-description">Seven OmniWorld examples with walking characters, horse riders, and moving vehicles. Inspect generated RGB, decoded depth, and progressive 3D geometry from the final GAE-64 model. RGB and depth rollouts contain 81 frames at 672 × 378, conditioned on one reference image, text, and a camera trajectory.</p>
+      <div class="scene-tabs" id="scene-tabs" role="tablist" aria-label="Dynamic scenes"></div>
+      <div id="scene-viewer" role="tabpanel"></div>
+    </div></div>
+    </section>
 
       <section class="tldr anonymous-summary section-shell reveal" aria-label="Method summary">
         
@@ -448,10 +460,20 @@
       </section>
 
 
+<section id="dynamic-comparisons" class="review-supplement">
+      <div class="section-shell"><div class="section">
+      <div class="section-heading"><div><p class="eyebrow">07 / Dynamic latent comparison · OmniWorld-fine-tuned models</p><h2>Dynamic scenes: SD-VAE vs. GAE-64</h2></div><span class="count" id="comparison-count"></span></div>
+      <p class="section-description">GT / SD-VAE / GAE-64, using the same reference image, camera trajectory, and text for each pair of generations. Each video contains 9 frames, displayed at 4 fps; each image panel is 252 × 252.</p>
+      <p class="context-note">These selected clips are additional qualitative evaluations. Table C3 reports aggregate results on its held-out 64-video test set. Four clips are training-source examples; one is a selected held-out benchmark example. The short comparisons below use a different model setup from the <a href="#dynamic-generation">final-model rollouts above</a>.</p>
+      <nav class="comparison-nav" id="comparison-nav" aria-label="Comparison scenes"></nav>
+      <div id="comparison-cases"></div>
+    </div></div>
+    </section>
+
       <section class="results results-light restored-images" id="t2i">
         <div class="section-shell">
           <div class="section-heading reveal">
-            <p class="section-index">07 / Text to image</p>
+            <p class="section-index">08 / Text to image</p>
             <h2>One prompt. RGB, depth, and 3D.</h2>
             <p>Twenty text-generated examples span characters, robots, interiors, food, sculpture, and stylized portraits. Select a scene to compare its RGB image, depth map, and interactive point cloud, decoded from the same generated latent.</p>
           </div>
@@ -480,7 +502,7 @@
       <section class="paper-section" id="paper">
         <div class="section-shell paper-grid">
           <article class="abstract-card reveal">
-            <p class="section-index">08 / Abstract</p>
+            <p class="section-index">09 / Abstract</p>
             <h2>Abstract</h2>
             <p>We present a compact geometry-native latent space as a shared foundation for perception and generation. Visual generators can produce photorealistic frames without preserving a consistent 3D scene. We argue that this is not only a modeling problem but also a representation problem: generators typically evolve appearance-centric latents, while perception models recover geometry in a semantically rich space that encodes cross-view structure. Rather than adding geometry as another output, we reparameterize a geometry foundation model’s features into a compact latent space for generation. We realize this shift with the geometry-native autoencoder (GAE), whose latent is jointly decodable to appearance, depth, cameras, and point maps. With this state, a standard conditional flow supports diverse generation tasks.</p>
             <p>In controlled comparisons that hold the generator and training protocol fixed, replacing the latent with GAE improves both visual quality and independently measured 3D coherence: FVD falls by 12.7% and 23.1% on RealEstate10K and DL3DV, and camera-trajectory error is halved on RealEstate10K. Together, these results show that the latent space is central to geometry-consistent generation and can serve as a shared interface between perception and generation.</p>
@@ -522,5 +544,8 @@
     <script src="hero-showcase.js?v=20260923clean" defer></script>
     <script src="case-navigation.js?v=20260922grid" defer></script>
     <script src="chapter-navigation.js?v=20260922hover" defer></script>
+    <script src="assets/direct-data/dynamic-samples.js?v=20261116" defer></script>
+    <script src="assets/direct-data/comparison-samples.js?v=20261116" defer></script>
+    <script src="assets/supplement/viewer.js?v=20261116" defer></script>
   </body>
 </html>

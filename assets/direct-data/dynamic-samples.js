@@ -1,0 +1,93 @@
+window.NGD_DYNAMIC_SAMPLES = [
+  {
+    "key": "omniworld_35",
+    "title": "Festival drive",
+    "caption": "A white sports car drives steadily along a paved road flanked by lush greenery, passing orange barriers and approaching a festival entrance marked by banners and tents under a clear blue sky.",
+    "frameCount": 81,
+    "rgb": "assets/dynamic/videos/omniworld_35_rgb.mp4",
+    "depth": "assets/dynamic/videos/omniworld_35_depth.mp4",
+    "progressive": "assets/dynamic/videos/omniworld_35_progressive.mp4",
+    "rgbPoster": "assets/dynamic/images/omniworld_35_rgb_poster.jpg",
+    "depthPoster": "assets/dynamic/images/omniworld_35_depth_poster.jpg",
+    "progressivePoster": "assets/dynamic/images/omniworld_35_progressive_poster.jpg",
+    "reference": "assets/dynamic/images/omniworld_35_reference.png"
+  },
+  {
+    "key": "omniworld_36",
+    "title": "Cliffside walk",
+    "caption": "A character walks steadily along a dirt path flanked by rugged cliffs on the left and autumnal trees on the right, surrounded by a serene landscape under clear skies.",
+    "frameCount": 81,
+    "rgb": "assets/dynamic/videos/omniworld_36_rgb.mp4",
+    "depth": "assets/dynamic/videos/omniworld_36_depth.mp4",
+    "progressive": "assets/dynamic/videos/omniworld_36_progressive.mp4",
+    "rgbPoster": "assets/dynamic/images/omniworld_36_rgb_poster.jpg",
+    "depthPoster": "assets/dynamic/images/omniworld_36_depth_poster.jpg",
+    "progressivePoster": "assets/dynamic/images/omniworld_36_progressive_poster.jpg",
+    "reference": "assets/dynamic/images/omniworld_36_reference.png"
+  },
+  {
+    "key": "omniworld_04",
+    "title": "Horse trail",
+    "caption": "A character rides a horse along a dirt path through a natural landscape, maintaining a steady pace as the surroundings shift subtly under the soft light of dusk.",
+    "frameCount": 81,
+    "rgb": "assets/dynamic/videos/omniworld_04_rgb.mp4",
+    "depth": "assets/dynamic/videos/omniworld_04_depth.mp4",
+    "progressive": "assets/dynamic/videos/omniworld_04_progressive.mp4",
+    "rgbPoster": "assets/dynamic/images/omniworld_04_rgb_poster.jpg",
+    "depthPoster": "assets/dynamic/images/omniworld_04_depth_poster.jpg",
+    "progressivePoster": "assets/dynamic/images/omniworld_04_progressive_poster.jpg",
+    "reference": "assets/dynamic/images/omniworld_04_reference.png"
+  },
+  {
+    "key": "omni_09",
+    "title": "Open-field rider",
+    "caption": "A character rides a white horse along a dirt path through an open landscape, passing grassy fields, scattered rocks, and distant ruins under a clear sky.",
+    "frameCount": 81,
+    "rgb": "assets/dynamic/videos/omni_09_rgb.mp4",
+    "depth": "assets/dynamic/videos/omni_09_depth.mp4",
+    "progressive": "assets/dynamic/videos/omni_09_progressive.mp4",
+    "rgbPoster": "assets/dynamic/images/omni_09_rgb_poster.jpg",
+    "depthPoster": "assets/dynamic/images/omni_09_depth_poster.jpg",
+    "progressivePoster": "assets/dynamic/images/omni_09_progressive_poster.jpg",
+    "reference": "assets/dynamic/images/omni_09_reference.png"
+  },
+  {
+    "key": "omni_10",
+    "title": "Off-road climb",
+    "caption": "A blue offroad vehicle ascends a rocky incline under a clear sky, showcasing its rugged design and steady progress against a backdrop of sparse vegetation and distant mountains.",
+    "frameCount": 81,
+    "rgb": "assets/dynamic/videos/omni_10_rgb.mp4",
+    "depth": "assets/dynamic/videos/omni_10_depth.mp4",
+    "progressive": "assets/dynamic/videos/omni_10_progressive.mp4",
+    "rgbPoster": "assets/dynamic/images/omni_10_rgb_poster.jpg",
+    "depthPoster": "assets/dynamic/images/omni_10_depth_poster.jpg",
+    "progressivePoster": "assets/dynamic/images/omni_10_progressive_poster.jpg",
+    "reference": "assets/dynamic/images/omni_10_reference.png"
+  },
+  {
+    "key": "omniworld_09",
+    "title": "Railway walk",
+    "caption": "A character clad in a long white robe walks steadily along a railway track surrounded by lush greenery and a forested landscape under a partly cloudy sky, evoking a serene yet solitary atmosphere.",
+    "frameCount": 81,
+    "rgb": "assets/dynamic/videos/omniworld_09_rgb.mp4",
+    "depth": "assets/dynamic/videos/omniworld_09_depth.mp4",
+    "progressive": "assets/dynamic/videos/omniworld_09_progressive.mp4",
+    "rgbPoster": "assets/dynamic/images/omniworld_09_rgb_poster.jpg",
+    "depthPoster": "assets/dynamic/images/omniworld_09_depth_poster.jpg",
+    "progressivePoster": "assets/dynamic/images/omniworld_09_progressive_poster.jpg",
+    "reference": "assets/dynamic/images/omniworld_09_reference.png"
+  },
+  {
+    "key": "omniworld_13",
+    "title": "Rural horse ride",
+    "caption": "A character rides a flaming horse along a dirt path bordered by fences and lush vegetation, surrounded by a serene landscape with distant mountains under a clear sky.",
+    "frameCount": 81,
+    "rgb": "assets/dynamic/videos/omniworld_13_rgb.mp4",
+    "depth": "assets/dynamic/videos/omniworld_13_depth.mp4",
+    "progressive": "assets/dynamic/videos/omniworld_13_progressive.mp4",
+    "rgbPoster": "assets/dynamic/images/omniworld_13_rgb_poster.jpg",
+    "depthPoster": "assets/dynamic/images/omniworld_13_depth_poster.jpg",
+    "progressivePoster": "assets/dynamic/images/omniworld_13_progressive_poster.jpg",
+    "reference": "assets/dynamic/images/omniworld_13_reference.png"
+  }
+];
