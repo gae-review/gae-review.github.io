@@ -28,11 +28,7 @@
 #revisit .rv-sd .rv-method-head i { background:#b5a5ff; }
 #revisit .rv-method-head small { color:#929c9b; font-size:11px; }
 #revisit video { display:block; width:100%; aspect-ratio:16/9; background:#080c0e; object-fit:contain; }
-#revisit .rv-scores { display:flex; align-items:center; gap:28px; min-height:66px; padding:14px 22px; }
-#revisit .rv-score { display:flex; align-items:baseline; gap:8px; }
-#revisit .rv-score small { color:#a8afaf; font-size:11px; }
-#revisit .rv-score b { font-size:18px; font-weight:600; font-variant-numeric:tabular-nums; }
-#revisit .rv-score b.best { color:#d0ee80; }
+#revisit .rv-legends { display:flex; align-items:center; gap:28px; min-height:66px; padding:14px 22px; }
 #revisit .rv-legend { display:flex; align-items:center; gap:7px; color:#b8bfbd; font-size:11px; }
 #revisit .rv-legend i { width:7px; height:7px; background:#32c6df; border-radius:50%; }
 #revisit .rv-legend:last-child i { background:#f3a347; }
@@ -53,7 +49,8 @@
  #revisit {padding-block:48px} #revisit .rv-stage-head{padding:17px;align-items:start;flex-direction:column} #revisit .rv-modes{align-self:stretch;display:flex} #revisit .rv-modes button{flex:1}
  #revisit .rv-topline{gap:8px} #revisit .rv-eyebrow{font-size:10px;max-width:180px;line-height:1.6} #revisit .rv-arrows{gap:8px}
  #revisit .rv-method-head{padding:12px 10px} #revisit .rv-method-head>span{font-size:13px;gap:6px} #revisit .rv-method-head small{display:none}
- #revisit .rv-scores{padding:12px 10px;gap:10px;flex-wrap:wrap;min-height:80px} #revisit .rv-score{gap:5px;flex-wrap:wrap} #revisit .rv-score small{font-size:9px} #revisit .rv-score b{font-size:15px}
  #revisit .rv-transport{padding:14px;gap:10px;flex-wrap:wrap} #revisit #rv-play{min-width:100px;padding:9px 12px} #revisit #rv-time{font-size:10px} #revisit #rv-return{margin-left:auto;padding:6px 10px}
  #revisit .rv-footer{padding:0 14px 15px;flex-direction:column;gap:7px} #revisit .rv-legend{font-size:9px}
 }
+#revisit .rv-legends[hidden] { display:none; }
+@media(max-width:760px){#revisit .rv-legends{padding:12px 10px;gap:10px;flex-wrap:wrap;min-height:56px}}

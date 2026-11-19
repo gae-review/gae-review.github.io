@@ -15,11 +15,11 @@
  async function start(){if(starting)return;const id=++attempt;starting=true;try{q('#rv-error').hidden=true;await Promise.all(videos.map(v=>v.play()));if(id!==attempt)return;play.innerHTML='Pause <span aria-hidden="true">Ⅱ</span>';play.setAttribute('aria-label','Pause both revisit videos');cancelAnimationFrame(raf);tick();}catch(e){if(id!==attempt)return;pause();if(e.name!=='NotAllowedError'&&e.name!=='AbortError')q('#rv-error').hidden=false;}finally{if(id===attempt)starting=false;}}
  function autoStart(){if(visible&&!document.hidden&&intent&&videos.every(v=>v.readyState>=2)&&videos.some(v=>v.paused))start();}
 
- function metrics(){
+ function renderLegends(){
   for(const m of ['gae','sd']){
-   const host=q(`#rv-${m}-scores`),sample=samples[index];
-   if(mode==='pointcloud'){host.innerHTML='<span class="rv-legend"><i></i>Frame 0</span><span class="rv-legend"><i></i>Frame 80</span>';continue;}
-   host.innerHTML=['lpips_return','dino_return'].map(k=>{const n=sample.metrics[m][k],other=sample.metrics[m==='gae'?'sd':'gae'][k],best=k==='lpips_return'?n<other:n>other;return `<span class="rv-score"><small>${k==='lpips_return'?'Return LPIPS ↓':'Return DINO ↑'}</small><b class="${best?'best':''}">${n.toFixed(3)}</b></span>`}).join('');
+   const host=q(`#rv-${m}-legend`);
+   host.hidden=mode==='rgb';
+   host.innerHTML=mode==='pointcloud'?'<span class="rv-legend"><i></i>Frame 0</span><span class="rv-legend"><i></i>Frame 80</span>':'';
   }
  }
  function render(t=0){
@@ -29,7 +29,7 @@
    const asset=s.media[m][mode],v=videos[i];v.poster=asset.poster;v.src=asset.video;v.preload=loaded?'auto':'none';v.loop=true;q(`#rv-open-${m}`).href=asset.video;if(loaded)v.load();
   }
   q('#rv-error').hidden=true;q('#rv-caption').textContent=mode==='rgb'?'The closing panels compare the input frame with the final generated frame.':'The closing view overlays frame 0 (cyan) and frame 80 (orange).';
-  metrics();update();
+  renderLegends();update();
  }
  function select(i){intent=true;index=(i+samples.length)%samples.length;render();const tab=tabs.children[index],left=tab.offsetLeft-tabs.offsetLeft;if(left<tabs.scrollLeft||left+tab.offsetWidth>tabs.scrollLeft+tabs.clientWidth)tabs.scrollTo({left:Math.max(0,left-tabs.clientWidth/2+tab.offsetWidth/2),behavior:'smooth'});}
  samples.forEach((s,i)=>{const tab=document.createElement('button');tab.className='rv-tab';tab.id=`rv-tab-${i}`;tab.type='button';tab.setAttribute('role','tab');tab.setAttribute('aria-controls','rv-panel');const img=document.createElement('img');img.src=s.thumbnail;img.alt='';img.loading='lazy';const title=document.createElement('strong');title.textContent=s.title;const route=document.createElement('small');route.textContent=s.trajectory;tab.append(img,title,route);tab.onclick=()=>select(i);tab.onkeydown=e=>{let next=i;if(e.key==='ArrowRight')next=(i+1)%samples.length;else if(e.key==='ArrowLeft')next=(i+samples.length-1)%samples.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=samples.length-1;else return;e.preventDefault();select(next);tabs.children[next].focus({preventScroll:true})};tabs.append(tab)});

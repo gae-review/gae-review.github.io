@@ -26,16 +26,6 @@ window.GAE_REVISIT_SAMPLES = [
         }
       }
     },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.1243,
-        "dino_return": 0.9545
-      },
-      "sd": {
-        "lpips_return": 0.142,
-        "dino_return": 0.9263
-      }
-    },
     "thumbnail": "assets/revisit/case-03-thumb.jpg?v=first-frame"
   },
   {
@@ -63,16 +53,6 @@ window.GAE_REVISIT_SAMPLES = [
           "video": "assets/revisit/case-01-sd-pointcloud.mp4",
           "poster": "assets/revisit/case-01-sd-pointcloud.jpg?v=first-frame"
         }
-      }
-    },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.1006,
-        "dino_return": 0.9814
-      },
-      "sd": {
-        "lpips_return": 0.1499,
-        "dino_return": 0.9677
       }
     },
     "thumbnail": "assets/revisit/case-01-thumb.jpg?v=first-frame"
@@ -104,16 +84,6 @@ window.GAE_REVISIT_SAMPLES = [
         }
       }
     },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.0456,
-        "dino_return": 0.9795
-      },
-      "sd": {
-        "lpips_return": 0.1446,
-        "dino_return": 0.9061
-      }
-    },
     "thumbnail": "assets/revisit/case-02-thumb.jpg?v=first-frame"
   },
   {
@@ -141,16 +111,6 @@ window.GAE_REVISIT_SAMPLES = [
           "video": "assets/revisit/case-04-sd-pointcloud.mp4",
           "poster": "assets/revisit/case-04-sd-pointcloud.jpg?v=first-frame"
         }
-      }
-    },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.0473,
-        "dino_return": 0.9805
-      },
-      "sd": {
-        "lpips_return": 0.1401,
-        "dino_return": 0.9359
       }
     },
     "thumbnail": "assets/revisit/case-04-thumb.jpg?v=first-frame"
@@ -182,16 +142,6 @@ window.GAE_REVISIT_SAMPLES = [
         }
       }
     },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.0448,
-        "dino_return": 0.9901
-      },
-      "sd": {
-        "lpips_return": 0.1901,
-        "dino_return": 0.9241
-      }
-    },
     "thumbnail": "assets/revisit/case-05-thumb.jpg?v=first-frame"
   },
   {
@@ -219,16 +169,6 @@ window.GAE_REVISIT_SAMPLES = [
           "video": "assets/revisit/case-06-sd-pointcloud.mp4",
           "poster": "assets/revisit/case-06-sd-pointcloud.jpg?v=first-frame"
         }
-      }
-    },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.0248,
-        "dino_return": 0.9937
-      },
-      "sd": {
-        "lpips_return": 0.1762,
-        "dino_return": 0.9296
       }
     },
     "thumbnail": "assets/revisit/case-06-thumb.jpg?v=first-frame"
@@ -260,16 +200,6 @@ window.GAE_REVISIT_SAMPLES = [
         }
       }
     },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.0443,
-        "dino_return": 0.9725
-      },
-      "sd": {
-        "lpips_return": 0.1407,
-        "dino_return": 0.9097
-      }
-    },
     "thumbnail": "assets/revisit/case-07-thumb.jpg?v=first-frame"
   },
   {
@@ -297,16 +227,6 @@ window.GAE_REVISIT_SAMPLES = [
           "video": "assets/revisit/case-08-sd-pointcloud.mp4",
           "poster": "assets/revisit/case-08-sd-pointcloud.jpg?v=first-frame"
         }
-      }
-    },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.0342,
-        "dino_return": 0.958
-      },
-      "sd": {
-        "lpips_return": 0.1251,
-        "dino_return": 0.9247
       }
     },
     "thumbnail": "assets/revisit/case-08-thumb.jpg?v=first-frame"
@@ -338,16 +258,6 @@ window.GAE_REVISIT_SAMPLES = [
         }
       }
     },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.0896,
-        "dino_return": 0.9737
-      },
-      "sd": {
-        "lpips_return": 0.1312,
-        "dino_return": 0.937
-      }
-    },
     "thumbnail": "assets/revisit/case-09-thumb.jpg?v=first-frame"
   },
   {
@@ -375,16 +285,6 @@ window.GAE_REVISIT_SAMPLES = [
           "video": "assets/revisit/case-10-sd-pointcloud.mp4",
           "poster": "assets/revisit/case-10-sd-pointcloud.jpg?v=first-frame"
         }
-      }
-    },
-    "metrics": {
-      "gae": {
-        "lpips_return": 0.059,
-        "dino_return": 0.9473
-      },
-      "sd": {
-        "lpips_return": 0.1754,
-        "dino_return": 0.9032
       }
     },
     "thumbnail": "assets/revisit/case-10-thumb.jpg?v=first-frame"
