@@ -19,7 +19,7 @@
     <title>GAE · Anonymous Supplementary Material</title>
     <link rel="stylesheet" href="styles.css?v=20260922film" />
     <link rel="stylesheet" href="assets/supplement/viewer.css?v=20261116" />
-    <link rel="stylesheet" href="revisit.css?v=20261119clean" />
+    <link rel="stylesheet" href="revisit.css?v=20261119paired" />
   </head>
   <body data-theme="dark">
     <div class="grain" aria-hidden="true"></div>
@@ -433,19 +433,20 @@
           <div class="section-heading section-heading-light reveal">
             <p class="section-index">06 / Revisit consistency</p>
             <h2 id="revisit-heading">Leave the view.<br>Return to the same world.</h2>
-            <p>Does the scene stay consistent when the camera comes back? Compare GAE and SD-VAE with the same input image and camera command, from the outward journey to the return view.</p>
+            <p>Follow GAE as the camera moves away and returns. Watch the RGB video alongside its revisit point cloud, then inspect how the first and last views overlap.</p>
           </div>
-          <div class="rv-topline"><span class="rv-eyebrow">10 selected comparisons · 81 generated frames</span><div class="rv-arrows"><button id="rv-prev" type="button" aria-label="Previous revisit example">←</button><span id="rv-count">01 / 10</span><button id="rv-next" type="button" aria-label="Next revisit example">→</button></div></div>
+          <div class="rv-topline"><span class="rv-eyebrow">13 selected examples · 81 generated frames</span><div class="rv-arrows"><button id="rv-prev" type="button" aria-label="Previous revisit example">←</button><span id="rv-count">01 / 13</span><button id="rv-next" type="button" aria-label="Next revisit example">→</button></div></div>
           <div class="rv-tabs" id="rv-tabs" role="tablist" aria-label="Revisit examples"></div>
           <div class="rv-stage" role="tabpanel" id="rv-panel">
-            <div class="rv-stage-head"><div class="rv-scene-name"><h3 id="rv-title"></h3><span class="rv-route" id="rv-route"></span></div><div class="segmented rv-modes" role="group" aria-label="Revisit representation"><button type="button" data-rv-mode="rgb" class="active" aria-pressed="true">RGB</button><button type="button" data-rv-mode="pointcloud" aria-pressed="false">Point clouds</button></div></div>
+            <div class="rv-stage-head"><div class="rv-scene-name"><h3 id="rv-title"></h3><span class="rv-route" id="rv-route"></span></div><span class="rv-route">GAE · RGB + point cloud</span></div>
             <div class="rv-pair">
-              <article class="rv-method rv-gae"><div class="rv-method-head"><span><i></i>GAE</span><small>Geometry-native latent</small></div><video id="rv-gae" data-summary-output muted playsinline preload="none" aria-label="GAE revisit comparison"></video><div class="rv-legends" id="rv-gae-legend" hidden></div></article>
-              <article class="rv-method rv-sd"><div class="rv-method-head"><span><i></i>SD-VAE</span><small>Appearance latent</small></div><video id="rv-sd" data-summary-output muted playsinline preload="none" aria-label="SD-VAE revisit comparison"></video><div class="rv-legends" id="rv-sd-legend" hidden></div></article>
+              <article class="rv-method rv-gae"><div class="rv-method-head"><span><i></i>RGB video</span><small>GAE</small></div><video id="rv-gae" data-summary-output muted playsinline preload="none" aria-label="GAE revisit RGB video"></video></article>
+              <article class="rv-method rv-cloud"><div class="rv-method-head"><span><i></i>Revisit point cloud</span><small>GAE</small></div><video id="rv-cloud" data-summary-output muted playsinline preload="none" aria-label="GAE revisit point cloud"></video></article>
             </div>
+            <div class="rv-overlap-key"><span>Final point-cloud overlay</span><span class="rv-legend"><i></i>Cyan · First frame (0)</span><span class="rv-legend"><i></i>Orange · Last frame (80)</span></div>
             <div class="rv-transport"><button id="rv-play" type="button" aria-label="Play both revisit videos">Play both <span aria-hidden="true">▶</span></button><input id="rv-seek" type="range" min="0" max="1000" value="0" aria-label="Revisit playback position"><span id="rv-time">0:00 / 0:10</span><button id="rv-return" type="button">Return view ↗</button></div>
-            <div class="rv-footer"><span id="rv-caption">The closing panels compare the input frame with the final generated frame.</span><span class="rv-sync">Synchronized playback</span></div>
-            <p id="rv-error" role="status" hidden>Could not load the video. <a id="rv-open-gae">Open GAE video</a> · <a id="rv-open-sd">Open SD-VAE video</a></p>
+            <div class="rv-footer"><span id="rv-caption">RGB ends with the first and last images; the point cloud ends with their overlay.</span><span class="rv-sync">Frame-aligned playback</span></div>
+            <p id="rv-error" role="status" hidden>Could not load the video. <a id="rv-open-gae">Open RGB video</a> · <a id="rv-open-cloud">Open point-cloud video</a></p>
           </div>
         </div>
       </section>
@@ -571,7 +572,7 @@
     <script src="assets/direct-data/dynamic-samples.js?v=20261116" defer></script>
     <script src="assets/direct-data/comparison-samples.js?v=20261116" defer></script>
     <script src="assets/supplement/viewer.js?v=20261116" defer></script>
-    <script src="assets/direct-data/revisit-samples.js?v=20261119clean" defer></script>
-    <script src="revisit.js?v=20261119clean" defer></script>
+    <script src="assets/direct-data/revisit-samples.js?v=20261119paired" defer></script>
+    <script src="revisit.js?v=20261119paired" defer></script>
   </body>
 </html>

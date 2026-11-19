@@ -25,7 +25,7 @@
 #revisit .rv-method-head { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 22px; }
 #revisit .rv-method-head>span { display:flex; align-items:center; gap:9px; font-size:16px; font-weight:750; letter-spacing:.03em; }
 #revisit .rv-method-head i { width:7px; height:7px; border-radius:50%; background:#c6e95a; }
-#revisit .rv-sd .rv-method-head i { background:#b5a5ff; }
+#revisit .rv-cloud .rv-method-head i { background:#b5a5ff; }
 #revisit .rv-method-head small { color:#929c9b; font-size:11px; }
 #revisit video { display:block; width:100%; aspect-ratio:16/9; background:#080c0e; object-fit:contain; }
 #revisit .rv-legends { display:flex; align-items:center; gap:28px; min-height:66px; padding:14px 22px; }
@@ -54,3 +54,8 @@
 }
 #revisit .rv-legends[hidden] { display:none; }
 @media(max-width:760px){#revisit .rv-legends{padding:12px 10px;gap:10px;flex-wrap:wrap;min-height:56px}}
+
+#revisit .rv-overlap-key{display:flex;align-items:center;justify-content:flex-end;flex-wrap:wrap;gap:12px 24px;padding:16px 24px;border-top:1px solid #ffffff14;color:#a8afaf;font-size:11px}
+#revisit .rv-overlap-key>span:first-child{margin-right:auto;color:#d2d7d4}
+#revisit .rv-stage{scroll-margin-top:80px}
+@media(max-width:760px){#revisit .rv-overlap-key{padding:14px;gap:12px}#revisit .rv-overlap-key>span:first-child{flex-basis:100%}#revisit .rv-method-head>span{font-size:11px}}
