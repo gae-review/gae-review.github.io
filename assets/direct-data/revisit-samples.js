@@ -95,6 +95,25 @@ window.GAE_REVISIT_SAMPLES = [
     "thumbnail": "assets/revisit/case-12-thumb.jpg?v=first-frame"
   },
   {
+    "key": "case-15",
+    "title": "Village gate",
+    "trajectory": "Orbit out & back",
+    "route": "orbit",
+    "media": {
+      "gae": {
+        "rgb": {
+          "video": "assets/revisit/case-15-gae-rgb.mp4",
+          "poster": "assets/revisit/case-15-gae-rgb.jpg?v=first-frame"
+        },
+        "pointcloud": {
+          "video": "assets/revisit/case-15-gae-pointcloud.mp4",
+          "poster": "assets/revisit/case-15-gae-pointcloud.jpg?v=first-frame"
+        }
+      }
+    },
+    "thumbnail": "assets/revisit/case-15-thumb.jpg?v=first-frame"
+  },
+  {
     "key": "case-04",
     "title": "Residential street",
     "trajectory": "Dolly out & back",
